@@ -1,0 +1,130 @@
+:root{
+    --primary-color: #0BDAA5;
+    --secondary-color: #0BDAA5;
+    --text-color: #212433;
+    --error-color: #ff4b2b;
+    --success-color: #20bf55;
+}
+
+body{
+    font-family: 'Noto Sans Thai';
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ 
+    background:white;
+}
+
+.container{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 2em;
+    width: 100%;
+    max-width: 300px;
+    backdrop-filter: blur(10px);
+}
+
+h2{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+
+}
+
+#sub-header{
+    text-align: center;
+    margin: 2rem;
+    font-size: 0.9rem;
+}
+
+label{
+    padding-bottom: 0.5rem ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--secondary-color);
+}
+
+button{
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    padding: 0.7rem;
+    color: white;
+    border-radius: 50px;
+    border:none;
+}
+
+.required{
+    color: red;
+    font-size: 1.2em;
+    margin-left: 3px;
+}
+
+.already{
+    display: flex;
+    justify-content: space-between;
+}
+.already a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#a{
+    text-align: right;
+}
+.activity-box{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10), 0 1px 1px rgb(0,0,0,0.22);
+}
+.info-box{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10), 0 1px 1px rgb(0,0,0,0.22);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #da0b62;
+}
+.something{
+    text-align: center;
+}
+
+
