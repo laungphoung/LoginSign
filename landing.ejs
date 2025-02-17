@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Landing Page</h2>
+        <p class="something">Let's find something to do!</p>
+
+        <form action="/user/landing" method="post">
+        <div class="activity-box">
+            <p><strong>Activity:</strong> Write a song</p>
+            <p><strong>Type:</strong> Music</p>
+        </div>
+
+        <div class="info-box">
+            <p><strong>Participant:</strong> 1</p>
+            <p><strong>Budget:</strong> $50.00</p>
+        </div>
+
+        <button class="btn" onclick="getNewActivity()">Get New Activity</button>
+
+        </form>
+        <a href="/" class="logout">Sign Out</a>
+    </div>
+
+    <script>
+        function getNewActivity() {
+            alert("Fetching a new activity..."); // Can be replaced with an API call
+        }
+    </script>
+</body>
+</html>
